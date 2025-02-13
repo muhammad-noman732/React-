@@ -1,0 +1,81 @@
+.header{
+    display:  flex;
+    justify-content: space-between;
+    margin: 40px 130px 0px 130px;
+
+}
+
+.topHead{
+    position: relative;
+     font-size: 24px;
+     font-family: Poppins, sans-serif;
+     font-weight: 700px;
+     line-height: 28.8px;
+     color: rgb(41, 120, 181);
+     cursor: pointer;
+}
+.topHead {
+    position: relative;
+    font-size: 24px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700; 
+    line-height: 28.8px;
+    color: rgb(41, 120, 181);
+    cursor: pointer;
+}
+
+/* Underline effect for .topHead */
+.topHead::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Adjust distance from text */
+    width: 0%;
+    height: 5px; /* Thickness of the underline */
+    background-color: rgb(41, 120, 181);
+    transition: width 0.3s ease-in-out;
+}
+
+/* Expand underline on hover */
+.topHead:hover::after {
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    font-weight: 500px;
+    font-family: Poppins, sans-serif;
+
+}
+
+
+li {
+    font-size: 18px;
+    color:rgb(54, 55, 56);
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+
+li:hover {
+    color: rgb(41, 120, 181); 
+    font-weight: 700; 
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 22px; 
+    width: 0%;
+    height: 5px; /* Thickness of the underline */
+    background-color: rgb(41, 120, 181); 
+    transition: width 0.3s ease-in-out;
+}
+
+li:hover::after {
+    width: 100%; 
+}

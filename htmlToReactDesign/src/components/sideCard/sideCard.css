@@ -1,0 +1,50 @@
+.sideCard{
+   margin-top: 50px;
+
+}
+
+.title{
+    margin-top: 4rem;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #555;
+    padding-left: 4rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;         
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 240px;                 /* Adjust as needed */
+    margin: 30px 0;                   /* Adjust vertical spacing */
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+.description{
+    color: #555;
+    line-height: 28px;
+
+}
+
+.SocialIcons{
+    display:  flex;
+    gap: 20px;
+}
+.icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(232, 218, 218);
+    border:none
+}
+
+.icons:hover{
+    background-color: rgb(89, 102, 243)
+}

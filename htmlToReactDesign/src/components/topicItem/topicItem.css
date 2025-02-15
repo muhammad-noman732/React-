@@ -1,0 +1,64 @@
+.topics {
+    padding: 20px;
+  }
+  
+  /* Container for each topic button */
+  .topic-btn {
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: -20px;
+    border-radius: 10px;
+  }
+
+  
+  .topic-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Icon container: distinct background for icon */
+  .icon-box {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px 16px;
+    color: #fff;
+    border-radius:10px ;
+    border-top-right-radius: 0px ;
+    border-bottom-right-radius: 0px;
+    /* No extra margin here so that it abuts the text container */
+  }
+
+  .icon-box:hover{
+    background-color: teal;
+  }
+  
+  /* Button text container with white background */
+  .btn-text {
+    background-color: #fff;
+    padding: 20px 45px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .topic-btn .icon-box,
+  .topic-btn .btn-text {
+    margin: 0;
+  }
+  
+  /* Style the text */
+  .btn-text p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-family: sans-serif;
+  }
+  

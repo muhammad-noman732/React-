@@ -1,0 +1,33 @@
+.logo{
+     width: 13%;
+     line-height: 28px;
+}
+
+.header
+{
+    padding-left: 65px;
+    padding-right: 75px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar{
+    display: flex;
+    gap: 30px;
+   
+
+}
+.navbar-item {
+    list-style: none;
+    font-size: 18px;
+    font-family: inter, sans-serif;
+    font-weight: bold;
+    color: rgb(108, 107, 107);
+    line-height: 28.8px;
+
+}
+
+.navbar-item:hover{
+    color: rgb(102, 127, 234);
+}

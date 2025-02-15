@@ -1,0 +1,19 @@
+.blogButtons{
+    padding: 8px 30px;  
+    height: 40px;
+    border-radius: 9999px;
+    background-color: #3490dc;
+   color: #fff;
+   border: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.rounded-button:hover {
+  background-color: #2779bd;
+
+}

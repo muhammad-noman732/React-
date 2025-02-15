@@ -1,0 +1,31 @@
+.blogSection{
+    padding-top: 5rem;
+    padding-left: 10px;
+    display: flex;
+    gap: 30px;
+
+
+}
+.blogs{
+    margin-left: 30px;
+}
+
+.aside{
+    padding-left: 20px;
+}
+
+.h2{
+    color:#555 ;
+    font-size: 1.7rem;
+    padding-left:1rem;
+    font-family: sans-serif;
+}
+
+.tags-title{
+    margin-top: 3.5rem;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #555;
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+}

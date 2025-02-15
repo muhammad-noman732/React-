@@ -1,0 +1,36 @@
+.footerSection{
+    display: flex;
+    margin: 100px 100px 40px 50px;
+    gap: 50px;
+    font-family: sans-serif;
+    align-content: baseline;
+}
+.logoSection{
+    width: 33%;
+    margin-right: 80px;
+    
+}
+.logoSection img{
+        transform: translateY(15px);
+        padding-bottom: 20px;
+}
+
+.web{
+    font-size: 16px;
+    line-height:28.8px;
+   color: rgb(114, 129, 151);
+}
+.linksSection{
+    width: 33%;
+}
+
+.linkHead{
+    font-size: 18px;
+    color:  rgb(45, 55, 72);
+}
+.foterPara{
+    color:  rgb(114, 129, 151);
+}
+.stuffSection{
+    width: 33%;
+}

@@ -1,0 +1,129 @@
+/* Card.css */
+
+.blog-card {
+    display: flex;
+    max-width: 700px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1 );
+    margin: 25px;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .blog-card:hover{
+    transform: translateY(-5px);
+  }
+  .blog-image-container {
+    flex: 0 0 40%;
+    min-width: 200px;
+    
+  }
+  
+  .blog-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+
+  .blog-content-container {
+    flex: 1;
+    padding: 10px 15px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .blog-topic {
+    align-self: flex-start;
+    background: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    font-size: 0.8rem;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  .blog-title a {
+    color: #222;
+    text-decoration: none;
+    font-size: 1.4rem;
+    display: block;
+   
+  }
+  
+  .blog-title a:hover {
+    color: #007bff;
+  }
+  
+  .blog-description {
+    color: #666;
+    font-size: 1rem;
+    margin-top: -10px;
+  }
+  
+  .author-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+  }
+  
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .author-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .author-name {
+    color: #3b3838;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 3px;
+  }
+  
+  .post-metadata {
+    display: flex;
+    align-items: center;
+    color: #888;
+    font-size: 0.85rem;
+    gap: 8px;
+  }
+  
+  .metadata-separator {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    background: #888;
+    border-radius: 50%;
+  }
+  
+  .time-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23888"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"/><path d="M13 7h-2v6h6v-2h-4z"/></svg>');
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .blog-card {
+      flex-direction: column;
+    }
+    
+    .blog-image-container {
+      width: 100%;
+      height: 250px;
+    }
+  }

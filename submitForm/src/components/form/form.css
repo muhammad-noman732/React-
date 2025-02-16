@@ -1,0 +1,17 @@
+
+.error-message {
+    color: red;
+  }
+  
+ input{
+  margin-bottom: 10px;
+ } 
+  .green-message{
+    border: 2px solid green;
+    padding: 5px;
+  }
+  
+  .error{
+    padding-left: 20px;
+    color: red;
+  }

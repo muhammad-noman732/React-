@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+/* Form styling */
+.form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 250px;
+}
+
+.add {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.add:hover {
+  background-color: #218838;
+}
+
+/* Todo list styling */
+.todos {
+  list-style-type: none;
+  padding: 0;
+  max-width: 400px;
+}
+
+.todos li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Checkbox styling */
+.todos li input.checkBox {
+  margin-right: 10px;
+}
+
+/* Todo text styling */
+.todos li span {
+  flex: 1;
+  margin-right: 10px;
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word; /* Break long words if needed */
+}
+
+/* Button styling */
+.todos li button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.todos li button.delete {
+  background-color: #dc3545;
+}
+
+.todos li button.delete:hover {
+  background-color: #c82333;
+}
+
+.todos li button.update {
+  background-color: #007bff;
+}
+
+.todos li button.update:hover {
+  background-color: #0056b3;
+}
+
+.todos li button.save {
+  background-color: #28a745;
+}
+
+.todos li button.save:hover {
+  background-color: #218838;
+}
+
+.todos li button.cancel {
+  background-color: #6c757d;
+}
+
+.todos li button.cancel:hover {
+  background-color: #5a6268;
+}

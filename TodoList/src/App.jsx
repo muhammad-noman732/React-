@@ -30,13 +30,14 @@ const App = () => {
       return
     }
     const newTodos = [
-      ...todos,
-      { id: Date.now(), text: input, completed: false }
+      { id: Date.now(), text: input, completed: false },
+      ...todos
     ];
     setTodos(newTodos);
     localStorage.setItem("todos", JSON.stringify(newTodos));
     // clear the input
     setInput("");
+
   };
 
   //  Delete Todo...

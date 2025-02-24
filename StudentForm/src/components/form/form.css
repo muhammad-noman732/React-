@@ -1,0 +1,33 @@
+/* Styling for the add student form */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  form label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  form input {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 6px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+  

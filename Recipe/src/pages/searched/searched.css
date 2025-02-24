@@ -1,0 +1,19 @@
+/* searched.css */
+.searched-wrapper {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .searched-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 4rem;
+  }

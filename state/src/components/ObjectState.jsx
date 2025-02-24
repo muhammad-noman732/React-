@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 const ObjectState = () => {
 
-      //  in this learn how to update the state of objects 
-     //  objects are mutable as we can change the values of objects like person.nane ="noman" 
-    // but react does not work with mutability in this only we can update the state
+     //  in this learn how to update the state of objects 
+    //  objects are mutable as we can change the values of objects like person.nane ="noman" 
+   //  but react does not work with mutability in this only we can update the state
 
  const [position , setPosition] = useState({
         x: 0,
@@ -19,7 +19,7 @@ const ObjectState = () => {
      
         
         // function handleFirstnameChange(e){
-        //     // these will not work because we are direcly updating the  objects we have to pdate the state
+        //     // these will not work because we are direcly updating the  objects we have to update the state
         //        person.firstName = e.target.value;
         // }
 
@@ -67,7 +67,7 @@ const ObjectState = () => {
     // <div
     //   onPointerMove={e => {
         //  this will not work because we are changing the the objects not updating the state
-        // . But without using the state setting function, React has no idea that object has changed. So React does not do anything in response.
+        //  But without using the state setting function, React has no idea that object has changed. So React does not do anything in response.
          
         // position.x = e.clientX;
         // position.y = e.clientY;

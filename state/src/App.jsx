@@ -3,7 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css';
 import ObjectState from './components/ObjectState';
-
+import Toggle from './components/toggle/Toggle';
+import ArrayState from './components/ArrayState/ArrayState';
+import Array from './components/Array';
 function App() {
   const [count, setCount] = useState(0)
 
@@ -37,6 +39,11 @@ function App() {
 
       {/*  object componetns for understanding of objects */}
       <ObjectState />
+      <Toggle/>
+      {/* Array components */}
+      {/* <ArrayState/> */}
+
+      <Array/>
     </>
   )
 }

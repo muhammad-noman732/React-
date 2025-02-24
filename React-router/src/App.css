@@ -1,0 +1,10 @@
+.navbar-element{
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          padding-right: 10px;
+}
+
+.active-link{
+    border: 2px solid red;
+}

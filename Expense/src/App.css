@@ -1,0 +1,170 @@
+/* Container for each expense item */
+.expense-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    margin: 10px auto;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the expense text */
+  .expense-text {
+    flex: 1;
+    text-align: left;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Styling for the expense amount */
+  .expense-amount {
+    margin-left: auto;
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  /* Styling for the delete button */
+  .delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  /* Change background color on hover */
+  .delete-btn:hover {
+    background-color: #ff1a1a;
+  }
+  
+  /* Global container for the app */
+  .expenseTracker {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+ 
+  /* Style for the add button */
+  .add-btn {
+    background-color: blueviolet;
+    min-width: 420px; /* matching the input width */
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 7px;
+    border: none;
+  }
+
+.heading{
+    color: #555;
+    margin-bottom: 40px;
+  }
+
+.balance {
+    
+    margin: 10px auto; /* centers the list horizontally */
+    max-width: 420px; /* using px unit for width consistency */
+    width: 100%;
+    text-align: left;
+  }
+  .History{
+    padding-bottom: 10px;
+    margin: 10px auto; /* centers the list horizontally */
+    max-width: 420px; /* using px unit for width consistency */
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .addTransaction{
+    padding-bottom: 10px;
+    margin: 10px auto; /* centers the list horizontally */
+    max-width: 420px; /* using px unit for width consistency */
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+  }
+ 
+.form-group {
+    margin: 10px auto; 
+    max-width: 420px;
+    width: 100%;
+    text-align: left; 
+  }
+  
+ 
+  .form-group label {
+    display: block; 
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px; 
+  }
+  
+  /* Style the input */
+  .form-group input {
+    width: 100%; 
+    padding: 7px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    color: #333;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .expenseInfo{
+    display: flex;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  /* Income.css */
+
+/* Container for income and expense sections */
+.income-expense-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    max-width: 420px; /* Set a maximum width */
+    margin: 20px auto; /* Center the container horizontally */
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Individual section styling */
+  .income, .expense {
+    flex: 1; /* Equal width for both sections */
+    text-align: center; /* Center text horizontally */
+  }
+  
+  /* Styling for the labels (Income and Expenses) */
+  .income p:first-child, .expense p:first-child {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Styling for the amounts */
+  .income p:last-child, .expense p:last-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2ecc71; /* Green color for income */
+    margin: 5px 0 0 0;
+  }
+  
+  .expense p:last-child {
+    color: #e74c3c; /* Red color for expenses */
+  }
+  

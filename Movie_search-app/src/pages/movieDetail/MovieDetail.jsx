@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams , Link } from 'react-router-dom'
 import Video from '../../components/videos/Video';
+import LikeButton from '../../components/likeButton/LikeButton';
 const MovieDetail = () => {
     const[detail , setDetail]= useState({});
     const[loading , setLoading] = useState(true)
@@ -43,6 +44,7 @@ const MovieDetail = () => {
         <button className='close-btn'>Close</button>
         </Link>
         <Video MovieId={params.id} />
+         <LikeButton movieId ={params.id}/>
         
        </div>
 

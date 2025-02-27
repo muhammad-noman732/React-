@@ -55,6 +55,7 @@ const AddTask = ({ editTodo, clearText }) => {
       {/*   Add task  */}
 
       <form onSubmit={AddHandler}>
+      
         <input
           className="input"
           type="text"

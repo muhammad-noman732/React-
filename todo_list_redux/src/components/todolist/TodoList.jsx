@@ -22,11 +22,11 @@ const TodoList = (props) => {
            }))
     }
 
-    const updateHandler = ()=>{
-      console.log("update button clicked" , props.item?.id);
+    // const updateHandler = ()=>{
+    //   console.log("update button clicked" , props.item?.id);
 
       
-    }
+    // }
 
     
 
@@ -41,7 +41,8 @@ const TodoList = (props) => {
         <li  style={{ 
           textDecoration: props.item?.completed ? 'line-through' : 'none',
           color: props.item.completed ? 'green' : 'inherit'
-        }}>{props.item?.text}</li>
+        }}
+        >{props.item?.text}</li>
         <button className='del_btn' onClick={deleteHandler}>Delete</button>
         
         <button className='update_btn' onClick={()=>props.startEditing(props.item?.id , props.item?.text)}>Update</button>

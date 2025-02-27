@@ -37,6 +37,7 @@ function App() {
   return (
      <div>
       <AddTask editTodo = {editTodo} clearText = {()=> setEditTodo({id:null , text:''})}/>
+      {Todos.length === 0 && <p>No todos yet! Add your first task.</p>}
       {/*  show task list  */}
       {
         Todos.map((item)=>(

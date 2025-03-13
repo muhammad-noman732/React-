@@ -1,4 +1,6 @@
-# Logs
+# Firebase config folder
+/config
+# Logs         
 logs
 *.log
 npm-debug.log*

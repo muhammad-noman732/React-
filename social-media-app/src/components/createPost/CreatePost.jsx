@@ -13,6 +13,9 @@ const CreatePost = () => {
   const [loading , setLoading] = useState(false);
   // get state of updatepost
   const post = useSelector((state) => state.feed.updatePost);
+    // get state of user so we can also give uid of user at createpost
+    const user = useSelector((state) => state.auth.user);
+
   const dispatch = useDispatch();
   console.log("post", post);
 
@@ -29,8 +32,10 @@ const CreatePost = () => {
   const AddPost = () => {
     console.log("title", title);
     console.log("description", description);
-
+   console.log("user uid " , user.uid);
+   
     const postData = {
+      uid:user.uid,
       title,
       description,
       createAt: new Date().toISOString(),
@@ -43,6 +48,7 @@ const CreatePost = () => {
     } else {
     
         dispatch(createPost({postData  , setLoading})); 
+
       // this is case where have to upload files in second sonerio
       // dispatch(createPost({...postData , file , setLoading}));
     }

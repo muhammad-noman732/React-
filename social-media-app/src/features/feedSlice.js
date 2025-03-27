@@ -172,7 +172,7 @@ export const feedSlice = createSlice({
     builder.addCase(updatePost.fulfilled , (state , action)=>{
       //  const index = state.feed.findIndex(post=> action.payload.id === post.id);
       //  state.feed[index] = action.payload
-    
+      
       state.feed = state.feed.map((post)=>{
         if (post.id === action.payload.id){
           return action.payload

@@ -27,6 +27,8 @@ const FeedListing = () => {
       // dispatch(updatePost(id))
       dispatch(updateDocId(id))
     }
+    console.log("feed" , feed);
+    
   return (
     <div>
     <h1>Feed Listing</h1>
@@ -36,6 +38,7 @@ const FeedListing = () => {
             <div key={item?.id}>
                 <h2>{item?.title}</h2>
                 <p>{item?.description}</p>
+                <p>{item?.uid}</p>
                 <img style={{width:100}} src={item?.imageURL} alt={item?.title} />
                 <button onClick={()=>{deleteHandler(item?.id)}}>Delete</button>
                 <button onClick={()=>{updateHandler(item?.id)}}>Edit</button>

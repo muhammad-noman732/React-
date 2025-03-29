@@ -1,6 +1,6 @@
-import React, {  useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { createTodo } from '../../store/features/todoSlice';
+import { createTodo, updateTodo } from '../../store/features/todoSlice';
 
 const Create = () => {
     const[title , setTitle] = useState("");
@@ -9,12 +9,42 @@ const Create = () => {
     // const[isSubmitting , setIsSubmitting] = useState(false);
     // const[loading , setLoading] = useState(false);
     // state from redux store
-    const {todos , error , loading  } = useSelector(state =>  state.todos);
+    const {todos , error , loading  ,  updateTodoid } = useSelector(state =>  state.todos);
+    console.log("update to id from store " , updateTodoid);
     const dispatch = useDispatch();
+        
+        //  find the todo being edited
+        const editTodo = todos.find(todo => todo._id === updateTodoid);
+        console.log("edit todo " , editTodo);
+        
+    // fill the field with the todo we  want to update 
+    useEffect(()=>{
+      if(editTodo){
+           setTitle(editTodo.title);
+           setDescription(editTodo.description);
+      }
+      else{
+        setTitle("");
+        setDescription("");
+      }
+    },[editTodo])
+
+
     const handleSubmit = (e)=>{
       //   dispatch acction to create todo
         e.preventDefault()
-         dispatch(createTodo({title , description})); 
+        if(updateTodoid){
+                 dispatch(updateTodo({
+                  title , 
+                  description ,
+                 id: updateTodoid
+                }
+              ));
+        }
+        else{
+          dispatch(createTodo({title , description}));
+        }
+         
          setTitle("");
          setDescription("")
     }
@@ -82,13 +112,14 @@ const Create = () => {
             />
           </div>
          {error && <div className='error-message'>{error}</div>}
-         {loading && <div className='loading'>{loading}</div>}
-          <button 
-          type="submit"
-           className="submit-btn"
-           disabled={loading}>
-           {loading ? "Submitting..." :"Add Todo"} 
-          </button>
+         {loading && <div className='loading'>Loading...</div>}
+         <button 
+           type="submit"
+          className="submit-btn"
+         disabled={loading}
+         >
+           {loading ? "Saving..." : updateTodoid ? "Update" : "Add"}         
+        </button>
         </form>
       );
 }

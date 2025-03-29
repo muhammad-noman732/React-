@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector , useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { deleteTodo, getTodos } from '../../store/features/todoSlice';
+import { deleteTodo, getState, getTodos } from '../../store/features/todoSlice';
 const TodoList = () => {
     // const [todos, setTodos] = useState([]);
   // const [loading , setLoading] = useState(false);
@@ -58,9 +58,17 @@ const TodoList = () => {
   // }
 
   const deleteHandler = (id)=>{
-          dispatch(deleteTodo(id))
+    if (window.confirm('Are you sure you want to delete this todo?')){
+      dispatch(deleteTodo(id))
+    }
+    else{
+      return
+    }
   }
 
+  const updateHandler = (id)=>{
+    dispatch(getState(id))
+  }
   return (
     <div className="todo-container">
     <h1>Crud App</h1>
@@ -78,7 +86,14 @@ const TodoList = () => {
            disabled={loading}
            onClick={()=>{deleteHandler(todo?._id)}}
            >
-            {loading ? "Deleting..." :" Delete"}
+            {loading ? "Deleting..." :"Delete"}
+          </button>
+          <button
+           className="update-btn"
+           disabled={loading}
+           onClick={()=>{updateHandler(todo?._id)}}
+           >
+            {loading ? "Updating..." :"Update"}
           </button>
         </div>
       ))

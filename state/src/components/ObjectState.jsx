@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 const ObjectState = () => {
 
      //  in this learn how to update the state of objects 
-    //  objects are mutable as we can change the values of objects like person.nane ="noman" 
-   //  but react does not work with mutability in this only we can update the state
+     //  objects are mutable as we can change the values of objects like person.nane ="noman" 
+    //  but react does not work with mutability in this only we can update the state
 
  const [position , setPosition] = useState({
         x: 0,
@@ -55,7 +55,7 @@ const ObjectState = () => {
         setPerson(
             {
                 ...person,
-               email :e.target.value
+               
             })
     }
           

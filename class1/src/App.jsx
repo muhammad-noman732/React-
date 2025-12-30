@@ -32,17 +32,17 @@ function App() {
       {/* using props  */}
        <div className='btn'>
        <Button text="increase" onClick={()=> setCount(count+ 1)} />
-      <Button text="decrease" onClick={()=> setCount(count - 1)} />
-      <Button text="Reset"    onClick={()=> setCount(0)} />
+       <Button text="decrease" onClick={()=> setCount(count - 1)} />
+       <Button text="Reset"    onClick={()=> setCount(0)} />
 
        </div>
      
 
-             {/*    witout prop drilling */}
+             {/*    witout props */}
 
       {/* <button onClick={()=> setCount(count+ 1)}>increase</button>
-      <button onClick={()=> setCount(count -1 )}>decrease</button>
-      <button onClick={()=> setCount(0 )}>Reset </button>
+          <button onClick={()=> setCount(count -1 )}>decrease</button>
+          <button onClick={()=> setCount(0 )}>Reset </button>
       */}
 
     </div>

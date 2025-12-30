@@ -6,13 +6,12 @@ const Navbar = () => {
     <div>
       <ul className="navbar-element">
         <li>
-          <NavLink to="/" className={({isActive}) =>
-           isActive ? 'active-link':""}>
-            Home</NavLink>
+          <NavLink to="/"  className={({isActive}) => 
+            isActive ? 'active-link' :""}>Home</NavLink>
         </li>
         <li>
           <NavLink to="/about" className={({isActive}) =>
-           isActive ? 'active-link':""}>
+           isActive ? 'active-ink':""}>
             About</NavLink>
         </li>
         <li>

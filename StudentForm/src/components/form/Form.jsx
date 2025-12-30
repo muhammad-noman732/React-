@@ -59,6 +59,7 @@ function Form({addRecod}) {
           onChange={(e) => {
             setName(e.target.value);
           }}
+          
         />
         <label htmlFor="Email">Email:</label>
         <input

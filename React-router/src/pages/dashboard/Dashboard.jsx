@@ -1,11 +1,16 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 const Dashboard = () => {
   return (
     <div>
-      Dashboard page
-      <Outlet/>
+      <h1>Dashboard page</h1>
+        <nav>
+        <Link to="/dashboard/courses">Courses</Link> | 
+        <Link to="/mock-test">mockTest</Link>
+      </nav>
+
+      
     </div>
   )
 }

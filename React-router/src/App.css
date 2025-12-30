@@ -1,7 +1,7 @@
 .navbar-element{
           list-style: none;
           display: flex;
-          justify-content: space-between;
+          justify-content: space-around;
           padding-right: 10px;
 }
 
